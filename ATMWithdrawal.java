@@ -14,6 +14,9 @@ public class ATMWithdrawal {
     Map<Integer, Integer> notes = new ConcurrentHashMap<Integer, Integer>();
     int[] denominations = new int[]{2000, 500, 200, 100, 50, 20, 10};
 
+    /**
+     * To create a hashmap of different denominations
+     */
     public ATMWithdrawal() {
         lock = new ReentrantLock();
 
@@ -33,7 +36,7 @@ public class ATMWithdrawal {
     }
 
     /**
-     * To withdraw minimum number of notes
+     * To withdraw minimum number of notes using greedy approach
      * @param amount - entered by user
      * @param balance- avialable balance
      */
