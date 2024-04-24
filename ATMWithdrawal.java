@@ -37,7 +37,8 @@ public class ATMWithdrawal {
 
     /**
      * To withdraw minimum number of notes using greedy approach
-     * @param amount - entered by user
+     *
+     * @param amount   - entered by user
      * @param balance- avialable balance
      */
     public int withdraw(int amount, int balance) {
@@ -59,7 +60,7 @@ public class ATMWithdrawal {
         } finally {
             lock.unlock();
         }
-        if(amount==0)
+        if (amount == 0)
             return 1;
         else
             return 0;
